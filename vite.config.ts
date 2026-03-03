@@ -1,12 +1,13 @@
-import { defineConfig } from "vitest/config"; // Меняем источник defineConfig
+import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { defineConfig as defineVitestConfig } from "vitest/config";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "/vegetable-shop/",
   test: {
-    globals: true, // Чтобы не импортировать 'describe' и 'it' каждый раз
-    environment: "jsdom", // Имитация браузера в Node.js
-    setupFiles: "./setupTests.ts", // Файл с настройками (создадим следующим шагом)
+    globals: true,
+    environment: "jsdom",
+    setupFiles: "./setupTests.ts",
   },
-});
+} as any);
