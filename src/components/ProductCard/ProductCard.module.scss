@@ -1,0 +1,134 @@
+.card {
+  width: 302px;
+  height: 414px;
+  padding: 0 !important;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
+  }
+}
+
+.imageWrapper {
+  width: 276px;
+  height: 276px;
+  margin: 16px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.middleBlock {
+  width: 270px;
+  margin: 16px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nameAndUnit {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.productName {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #212529;
+}
+
+.unitText {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #868e96;
+}
+.counterGroup {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.counterBtn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: #f1f3f5;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #868e96;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #e9ecef;
+  }
+}
+
+.counterValue {
+  width: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #212529;
+}
+
+.bottomBlock {
+  padding-left: 10px;
+  width: 270px;
+  height: 44px;
+  margin: auto auto 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #212529;
+}
+
+.addToCartBtn {
+  width: 204px;
+  height: 44px;
+  border: none !important;
+  border-radius: 8px !important;
+  cursor: pointer;
+  background-color: #e7faeb !important;
+  color: #3b944e !important;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #dcf5e2 !important;
+  }
+}
